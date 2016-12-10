@@ -11,9 +11,42 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20161210203628) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "financial_profiles", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+    t.boolean  "smoker"
+    t.boolean  "drinker"
+    t.boolean  "retirement_age"
+    t.integer  "mortgage_value"
+    t.integer  "car_loan_value"
+    t.integer  "bank_loan_value"
+    t.integer  "amount_to_pass_to_heir"
+  end
+
+  create_table "users", force: true do |t|
+    t.string  "reference_id"
+    t.integer "ssn"
+    t.string  "first_name"
+    t.string  "surname"
+    t.string  "address1"
+    t.string  "city"
+    t.string  "state_code"
+    t.string  "postal_code"
+    t.string  "country_code"
+    t.date    "birth_date"
+    t.string  "mobile_phone_number"
+    t.string  "email_address"
+    t.integer "driver_license"
+    t.string  "driver_license_issue_location"
+    t.date    "driver_license_issue_date"
+    t.date    "driver_license_expiration_date"
+    t.string  "third_party_user_id"
+  end
 
 end
