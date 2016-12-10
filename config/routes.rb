@@ -1,3 +1,6 @@
 HackinTheRetirement::Application.routes.draw do
-  root to: 'static_pages#home'
+  root to: 'main#home'
+
+  get '/oauth', to: 'session#oauth'
+  get '/onboarding', to: 'main#onboarding'
 end
