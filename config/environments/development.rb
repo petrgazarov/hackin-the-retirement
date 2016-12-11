@@ -28,4 +28,7 @@ HackinTheRetirement::Application.configure do
   config.assets.debug = true
 
   config.react.variant = :development
+
+  # config.less.paths << "#{Rails.root}/app/assets/stylesheets/less"
+  # config.less.compress = true
 end

@@ -34,3 +34,14 @@ group :development do
 end
 
 gem 'httparty'
+
+# gem 'less-rails', '~> 2.7.0'
+
+# gem 'therubyracer' # Ruby
+
+# gem 'magnific-popup-rails', '~> 1.1.0'
+# gem "scrollreveal-rails" 
+# gem "font-awesome-rails"
+# gem 'bootstrap-sass', '~> 3.3.6'
+#
+gem 'angularjs-rails'
